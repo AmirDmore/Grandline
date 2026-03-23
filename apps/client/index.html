@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Grand Line</title>
+    <style>
+      body { margin: 0; font-family: Inter, Arial, sans-serif; background: #08111f; color: white; }
+      #app { min-height: 100vh; display: grid; grid-template-columns: 2fr 1fr; }
+      #game { min-height: 100vh; background: linear-gradient(180deg, #163454, #08111f); }
+      #panel { padding: 24px; border-left: 1px solid rgba(255,255,255,.1); }
+      .card { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.08); border-radius: 16px; padding: 16px; margin-bottom: 16px; }
+      .button { background: #3ea2ff; border: 0; color: white; border-radius: 10px; padding: 10px 14px; cursor: pointer; }
+      .muted { opacity: .75; font-size: 14px; }
+      .hero { margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid rgba(255,255,255,.08); }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <div id="game"></div>
+      <aside id="panel">
+        <div class="card">
+          <h1 style="margin-top:0">The Grand Line</h1>
+          <p class="muted">Milestone 1 browser client scaffold.</p>
+          <button class="button" id="summonBtn">Summon</button>
+          <p id="summonResult" class="muted"></p>
+        </div>
+        <div class="card">
+          <h2 style="margin-top:0">Featured Heroes</h2>
+          <div id="heroList"></div>
+        </div>
+        <div class="card">
+          <h2 style="margin-top:0">Live Events</h2>
+          <div id="eventList"></div>
+        </div>
+      </aside>
+    </div>
+    <script type="module" src="./src/main.ts"></script>
+  </body>
+</html>
