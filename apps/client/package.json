@@ -1,0 +1,9 @@
+{
+  "name": "@grandline/client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "echo wire Vite + Phaser next",
+    "build": "echo build pending"
+  }
+}
