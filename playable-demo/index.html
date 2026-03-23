@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Grand Line - Playable Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>The Grand Line</h1>
+      <p class="subtitle">Playable browser slice</p>
+    </div>
+    <div class="currencies">
+      <div class="currency"><span>Gold</span><strong id="goldValue">0</strong></div>
+      <div class="currency"><span>Gems</span><strong id="gemsValue">0</strong></div>
+      <div class="currency"><span>Tickets</span><strong id="ticketsValue">0</strong></div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="panel large">
+      <div class="panel-header">
+        <h2>Campaign Map</h2>
+        <button id="resetSaveBtn" class="ghost">Reset Save</button>
+      </div>
+      <div id="islandGrid" class="island-grid"></div>
+      <div id="stagePanel" class="stage-panel"></div>
+    </section>
+
+    <section class="panel side">
+      <div class="panel-header">
+        <h2>Summon Dock</h2>
+      </div>
+      <div class="summon-box">
+        <p>Build your crew with fair pulls and duplicate shard progression.</p>
+        <div class="summon-actions">
+          <button id="singleSummonBtn">Single Summon</button>
+          <button id="tenSummonBtn">Ten Summons</button>
+        </div>
+        <p class="small" id="pityText"></p>
+        <div id="summonLog" class="summon-log"></div>
+      </div>
+
+      <div class="panel-header with-top-gap">
+        <h2>Live Events</h2>
+      </div>
+      <div id="eventsPanel"></div>
+
+      <div class="panel-header with-top-gap">
+        <h2>Tasks</h2>
+      </div>
+      <div id="tasksPanel"></div>
+    </section>
+  </main>
+
+  <section class="layout lower">
+    <section class="panel medium">
+      <div class="panel-header">
+        <h2>Formation</h2>
+        <span class="small">Pick up to 6 heroes</span>
+      </div>
+      <div id="formationSlots" class="formation-slots"></div>
+    </section>
+
+    <section class="panel medium">
+      <div class="panel-header">
+        <h2>Owned Heroes</h2>
+        <span class="small">Your roster and duplicate shards</span>
+      </div>
+      <div id="heroRoster" class="hero-roster"></div>
+    </section>
+  </section>
+
+  <div id="toast" class="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
